@@ -1,0 +1,139 @@
+.links{
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.catalog {
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .produtos-container {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .produto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 220px !important;
+    margin-bottom: 5%;
+  }
+  
+  .img-produto {
+    max-width: 200px !important;
+    height: 140px !important;
+    object-fit: cover;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: #020407;
+    padding: 20px;    
+  }
+  
+  .logo {
+    
+  }
+  
+  .catalog {
+    padding: 20px;
+  }
+  
+  .produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .produto {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .img-produto {
+    max-width: 150px;
+    cursor: pointer;
+  }
+  
+  .descricao {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .valor_produto {
+    font-size: 16px;  
+  }
+  
+  /* Estilos para o modal */
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-content {
+    background-color: #3f29ce;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px; /* Limitar a largura máxima do modal */
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: auto;
+    max-height: 80vh; /* Limitar a altura máxima da imagem */
+  }
+  
+  
+  /* Media query para telas menores (celulares) */
+  @media (max-width: 600px) {
+    .produtos-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo{
+      width: 70%;
+    }
+  
+    .produto {
+      width: 90%;
+    }
+  
+    .App-header h1 {
+      font-size: 1.5em;
+    }
+  }
